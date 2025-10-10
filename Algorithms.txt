@@ -1,0 +1,56 @@
+1.)Linear Search Algorithm (Sequential Search)
+Definition:
+Linear Search is a simple method where we check each element of the array sequentially until the desired element is found or the list ends.
+
+Algorithm Steps:
+
+step-1:Start from the first element of the array.
+
+step-2:Compare the current element with the target element.
+
+step-3:If they match, return the index or say "element found".
+
+step-4:If not, move to the next element.
+
+step-5:Repeat steps 2–4 until you reach the end of the array.
+
+step-6:If the element is not found after checking all elements, print "element not found".
+
+Example:
+Input: arr = [10, 20, 30, 40, 50], target = 30  
+Output: Element found at index 2
+
+Binary Search Algorithm
+
+Definition:
+Binary Search is an efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
+
+Algorithm Steps:
+
+Step-1:Start with two pointers: low = 0 and high = n - 1.
+
+Step-2:Repeat while low <= high:
+
+Step-3:Find the middle index: mid = (low + high) / 2.
+
+Step-4:Compare the middle element with the target.
+
+Step-5:If arr[mid] == target, return mid (element found).
+
+Step-6:If arr[mid] < target, set low = mid + 1 (search right half).
+
+Step-7:If arr[mid] > target, set high = mid - 1 (search left half).
+
+step-8:Repeat steps 2–7 until (low=<high)becomes True
+
+Step-9:If low > high, return (element not found).
+
+Example:
+Input: arr = [10, 20, 30, 40, 50], target = 30  
+Output: Found at index 2
+
+Summary Table:
+Feature			Linear Search	     		Binary Search
+Array Type		Unsorted or Sorted		Sorted Only
+Time Complexity		O(n)				O(log n)
+Strategy		Sequential			Divide and Conquer
